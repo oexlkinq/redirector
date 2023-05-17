@@ -9,11 +9,11 @@
         const url = new URL(window.location.href);
         const targetUrl = url.searchParams.get('url');
     
-        if(!targetUrl){
-            return alert('url format: https://oexlkinq.github.io/redirector?url=https://target.site');
+        if(targetUrl){
+            window.location.href = targetUrl;
+        }else{
+            alert('url format: https://oexlkinq.github.io/redirector?url=https://target.site');
         }
-    
-        window.location.href = targetUrl;
     </script>
 </head>
 <body>
