@@ -1,0 +1,11 @@
+<noscript>js is required</noscript>
+<script>
+    const url = new URL(window.location.href);
+    const targetUrl = url.searchParams.get('url');
+
+    if(!targetUrl){
+        document.body.innerHTML = 'url format: https://oexlkinq.github.io/redirector?url=https://target.site';
+    }
+
+    window.location.href = targetUrl;
+</script>
