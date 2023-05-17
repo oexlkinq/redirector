@@ -1,11 +1,22 @@
-<noscript>js is required</noscript>
-<script>
-    const url = new URL(window.location.href);
-    const targetUrl = url.searchParams.get('url');
-
-    if(!targetUrl){
-        document.body.innerHTML = 'url format: https://oexlkinq.github.io/redirector?url=https://target.site';
-    }
-
-    window.location.href = targetUrl;
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirector</title>
+    <script>
+        const url = new URL(window.location.href);
+        const targetUrl = url.searchParams.get('url');
+    
+        if(!targetUrl){
+            return alert('url format: https://oexlkinq.github.io/redirector?url=https://target.site');
+        }
+    
+        window.location.href = targetUrl;
+    </script>
+</head>
+<body>
+    <noscript>js required</noscript>
+</body>
+</html>
